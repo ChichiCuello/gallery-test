@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+.img {
+  max-width: 100%;
+  cursor: pointer;
+}
+.img:hover{
+  outline: 1px solid black;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  overflow: auto;
+  text-align: center;
+}
+
+.popup-img {
+  max-width: 90%;
+  max-height: 90vh; /* Adjust max-height as needed */
+  margin: auto;
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Slider controls */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
