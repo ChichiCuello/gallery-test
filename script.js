@@ -20,7 +20,7 @@ let currentImageIndex = 0;
 function gallery() {
   let content = '';
   for (let counter = 1; counter < 10; counter++) {
-    content += `<img src="/images/coffee-${counter}.JPG" class="img">`;
+    content += `<img src="/gallery-test/images/coffee-${counter}.JPG" class="img">`;
   }
   document.querySelector('.js-container').innerHTML = content;
 
